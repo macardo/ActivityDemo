@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
-            android:label="MainActivity">
+            android:label="MainActivity"
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity"
-            android:label="Main2Activity">
+            android:label="Main2Activity"
+            android:launchMode="singleInstance"
+            >
             <intent-filter>
                 <action android:name="com.macardo.activitydemo.ACTION_START"/>
                 <category android:name="android.intent.category.DEFAULT"/>

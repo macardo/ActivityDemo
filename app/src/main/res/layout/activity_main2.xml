@@ -13,11 +13,27 @@
         android:textSize="40dp"
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"/>
     <Button
         android:id="@+id/button"
         android:text="将数据返回上一个Activity"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/buton1"
+        android:text="跳转到MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:text="跳转到Main2Activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"/>
 
 </LinearLayout>

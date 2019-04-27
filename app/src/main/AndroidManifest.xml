@@ -11,24 +11,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:label="MainActivity"
-            android:launchMode="standard">
+            android:launchMode="standard"></activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="Main2Activity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.macardo.task2">
+            <intent-filter>
+                <action android:name="com.macardo.activitydemo.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main3Activity" />
+
+
+        <activity android:name=".ActivityA"
+            android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"
-            android:label="Main2Activity"
+        <activity
+            android:name=".ActivityB"
             android:launchMode="singleInstance"
-            >
-            <intent-filter>
-                <action android:name="com.macardo.activitydemo.ACTION_START"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
+            />
+        <activity android:name=".ActivityC"
+            android:launchMode="singleInstance"></activity>
     </application>
 
 </manifest>
